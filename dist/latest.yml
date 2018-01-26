@@ -1,9 +1,0 @@
-version: 1.0.10
-files:
-  - url: lataaapp-setup-1.0.10.exe
-    sha512: GOZtlqAgHdlyoklkmj1PAOiVkmm8Lyv0FQ7T9lgF+adjDqsPIuslVWGwq21KZ3uNazbWRZxUo7p7JrXmvljxow==
-    size: 46869055
-path: lataaapp-setup-1.0.10.exe
-sha512: GOZtlqAgHdlyoklkmj1PAOiVkmm8Lyv0FQ7T9lgF+adjDqsPIuslVWGwq21KZ3uNazbWRZxUo7p7JrXmvljxow==
-sha2: c2f522236ffa7932d6d5236fabd07fb71d0ec35f5ec186df8ba759b9769d96f6
-releaseDate: '2018-01-26T14:16:18.430Z'
