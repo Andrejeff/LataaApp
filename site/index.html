@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>LataaApp</title>
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+    <style>
+      body {
+        min-height: 1% !important;
+        -webkit-user-select: none;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      #teksti {
+        height: 35px;
+      }
+
+      .titleNappi {
+        -webkit-app-region: "no-drag";
+      }
+
+      .titleJuttu {
+        -webkit-app-region: "drag";
+      }
+    </style>
+
+    <header class="mdc-toolbar titleJuttu">
+      <div class="mdc-toolbar__row">
+        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+          <span class="mdc-toolbar__title">LataaApp</span>
+        </section>
+        <section class="mdc-toolbar__section mdc-toolbar__section--align-end">
+            <button id="update" style="color: white" class="mdc-button mdc-button--compact mdc-card__action"></button>
+            <button style="color: white" id="exit" class="mdc-button mdc-button--compact mdc-card__action titleNappi">X</button>
+        </section>
+      </div>
+    </header>
+
+    <center style="margin-top: 14px">
+      <div class="demo-card-wide mdc-card mdc-shadow--2dp">
+        <div class="mdc-card__title">
+          <h2 class="mdc-card__title-text">LataaApp</h2>
+        </div>
+        <div class="mdc-card__actions mdc-card--border">
+            <div class="mdc-text-field mdc-text-field--fullwidth" id="teksti">
+                <input class="mdc-text-field__input"
+                       type="text"
+                       placeholder="Video..."
+                       aria-label="Video..."
+                       id="text">
+              </div>
+            <button id="nappi" class="mdc-button mdc-button--compact mdc-card__action">Lataa</button>
+            <button id="downloads" class="mdc-button mdc-button--compact mdc-card__action">Avaa lataukset</button>
+        </div>
+      </div>
+
+    </center>
+  </body>
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script>require('./static/renderer.js')</script>
+</html>

@@ -1,22 +1,26 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "name": "lataaapp",
+  "version": "1.0.10",
+  "description": "hassu lataa appi",
   "main": "main.js",
+  "repository": "https://github.com/Andrejeff/LataaApp",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "oldbuild": "electron-packager . --out=dist/win --platform=win32 --icon=assets/icon.ico --overwrite --electronVersion=1.7.10 && node build.js",
+    "build": "build --win",
+    "ship": "build --help"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "GitHub",
+  "author": "jeffe",
   "license": "CC0-1.0",
+  "dependencies": {
+    "electron-updater": "^2.20.1",
+    "electron-winstaller": "^2.6.4",
+    "ytdl-core": "^0.19.0"
+  },
   "devDependencies": {
-    "electron": "~1.7.8"
+    "electron-builder": "^19.55.2",
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-wix-msi": "^1.2.3",
+    "ytdl-core": "^0.19.0"
   }
 }
