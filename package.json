@@ -10,7 +10,7 @@
     "build": "build --win",
     "ship": "build --help"
   },
-  "author": "jeffe",
+  "author": "YEP",
   "license": "CC0-1.0",
   "dependencies": {
     "electron-updater": "^2.20.1",
