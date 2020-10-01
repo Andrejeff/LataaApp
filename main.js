@@ -11,6 +11,7 @@ const log = a => {
 };
 // require('electron-reload')(path.join(__dirname, 'site'));
 let mainWindow;
+let KORONA;
 
 function createWindow() {
   mainWindow = new BrowserWindow({ width: 800, height: 350, frame: false });
